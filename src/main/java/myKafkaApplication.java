@@ -21,13 +21,13 @@ public class myKafkaApplication {
         while (Constants.RUNNING) {
             ConsumerRecords<Long, String> consumerRecords = consumer.poll(1000);
             if (consumerRecords.count() == 0) {
-                    break;
+                break;
             }
             consumer.commitAsync();
             consumerRecordsToSend = consumerRecords;
         }
         consumer.close();
-        return  consumerRecordsToSend;
+        return consumerRecordsToSend;
     }
 
     static void runProducer() {
@@ -36,7 +36,7 @@ public class myKafkaApplication {
             ProducerRecord<Long, String> record = new ProducerRecord<Long, String>(Constants.FIRST_TOPIC,
                     "\"nani :c  " + i);
             send(producer, record);
-            System.out.println("Trying to send a message " + record.value() + "\" to topic " + record.topic() );
+            System.out.println("Trying to send a message " + record.value() + "\" to topic " + record.topic());
             try {
                 TimeUnit.SECONDS.sleep(1);
             } catch (InterruptedException ex) {
@@ -47,13 +47,14 @@ public class myKafkaApplication {
 
     static void runConsoleProducer(ConsumerRecords<Long, String> consumerRecords) {
         Producer<Long, String> producer = ProducerCreator.createProducer();
-        for (ConsumerRecord<Long, String> consumerRecord : consumerRecords){
-            ProducerRecord<Long, String>  record =  new ProducerRecord<Long, String>(Constants.SECOND_TOPIC,
+        for (ConsumerRecord<Long, String> consumerRecord : consumerRecords) {
+            ProducerRecord<Long, String> record = new ProducerRecord<Long, String>(Constants.SECOND_TOPIC,
                     consumerRecord.value().toUpperCase());
             send(producer, record);
         }
     }
-    static void send(Producer<Long, String> producer, ProducerRecord<Long, String>  record ){
+
+    static void send(Producer<Long, String> producer, ProducerRecord<Long, String> record) {
         try {
             RecordMetadata metadata = producer.send(record).get();
         } catch (ExecutionException e) {

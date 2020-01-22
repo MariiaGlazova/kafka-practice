@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3f5f1b4-724b-4cfd-a52c-ae9ffe3ed6a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConsumerCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConsumerCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/myKafkaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/myKafkaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ConsumerCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ConsumerCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/anotherThread.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/myKafkaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/myKafkaApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +82,7 @@
       <workItem from="1579586861795" duration="1568000" />
       <workItem from="1579588685359" duration="11500000" />
       <workItem from="1579672226893" duration="4733000" />
+      <workItem from="1579677124127" duration="1341000" />
     </task>
     <servers />
   </component>
@@ -137,13 +134,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="485" y="179" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579594711433" />
-    <state x="690" y="361" key="com.intellij.ide.util.TipDialog" timestamp="1579672559045">
+    <state x="690" y="361" key="com.intellij.ide.util.TipDialog" timestamp="1579677131149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="361" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579672559045" />
+    <state x="690" y="361" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579677131149" />
     <state x="709" y="503" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1579594708975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="709" y="503" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1579594708975" />
+    <state x="364" y="238" key="new project wizard" timestamp="1579677936029">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="364" y="238" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1579677936029" />
   </component>
 </project>
